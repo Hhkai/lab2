@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+    <!-- 所有的Action定义都应该放在package下 -->
+    <package name="lab2" extends="struts-default">
+    	<action name = "searchAuthor" class = "lab2.Search" method = "search">
+        	<result name = "success">/searchAuthor.jsp</result>
+        </action>
+        <action name = "searchAllAuthor" class = "lab2.Search" method = "all">
+        	<result name = "success">/searchAuthor.jsp</result>
+        </action>
+        <action name="book" class = "lab2.Search" method = "book">
+        	<result name = "success">/searchBook.jsp</result>
+        </action>
+        <action name="detail" class = "lab2.Details" method = "detail">
+        	<result name = "success">/detail.jsp</result>
+        </action>
+        <action name="changeAuthorJ" class = "lab2.Change" method = "changeAuthorJ">
+        	<result name = "success">/chAuthor.jsp</result>
+        </action>
+        <action name="changeAuthor" class = "lab2.Change" method = "changeAuthor">
+        	<result name = "success">/index.jsp</result>
+        </action>
+        <action name="deleteAuthor" class = "lab2.Change" method = "deleteAuthor">
+        	<result name = "success">/index.jsp</result>
+        </action>
+        <action name="changeBookJ" class = "lab2.Change" method = "changeBookJ">
+        	<result name = "success">/chBook.jsp</result>
+        </action>
+        <action name="changeBook" class = "lab2.Change" method = "changeBook">
+        	<result name = "success">/index.jsp</result>
+        	<result name = "error">/noAuthor.jsp</result>
+        </action>
+        <action name="deleteBook" class = "lab2.Change" method = "deleteBook">
+        	<result name = "success">/index.jsp</result>
+        </action>
+    </package>
+</struts>
