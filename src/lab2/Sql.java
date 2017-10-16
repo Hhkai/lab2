@@ -3,7 +3,7 @@ package lab2;
 import java.sql.*;
 import java.util.*;
 
-public class Sql {
+public class Sql {//
 	private static String driver = "com.mysql.jdbc.Driver";
 	private static String user = "root";
 	private static String url = "jdbc:mysql://localhost:3306/bookdb";
